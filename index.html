@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quran Reader</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <div>
+        <h1>Quran Reader</h1>
+        <p>اردو ترجمہ کنز الایمان کے ساتھ، عربی متن کو پڑھیں۔</p>
+      </div>
+      <button id="themeToggle">🌙 تاریک موڈ</button>
+    </header>
+
+    <section class="controls">
+      <label>
+        تلاش کریں
+        <input id="searchInput" type="search" placeholder="عربی یا اردو متن تلاش کریں..." />
+      </label>
+
+      <label>
+        سورہ منتخب کریں
+        <select id="surahSelect"></select>
+      </label>
+    </section>
+
+    <main class="content">
+      <aside class="surah-info" id="surahInfo">
+        <h2>سورہ منتخب کریں</h2>
+        <p>سورہ منتخب کریں تاکہ آیات اور ترجمہ ظاہر ہوں۔</p>
+      </aside>
+
+      <section class="ayahs" id="ayahList"></section>
+    </main>
+
+    <footer class="footer-note">
+      <p>یہ ایپ کنز الایمان کے اردو ترجمہ کے ساتھ ایک سادہ قرآن ریڈر ہے۔</p>
+    </footer>
+  </div>
+
+  <script src="quran-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
